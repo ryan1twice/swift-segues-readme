@@ -88,7 +88,7 @@ Open `Main.storyboard` in Interface Builder again. Notice that there is a little
 
 This icon represents a _segue_. You can click on it and view its attributes in Interface Builder's Attributes Inspector. In particular, note that its _identifier_ has been set to "ShowFruitDetails". This string will be used to identify the segue in your Swift code. Later on, we'll cover in more detail how you create segues between views yourself in Interface Builder; for now, it's important to learn how you can identify segues and work with them.
 
-You know that there's a segue between the `FruitListingViewController` (represented as **Fruits Scene** in the storyboard) and `FruitViewController` (represented as **Fruit View Controller Scene** in the storyboard). Open up `FruitListingViewController.swift` in Xcode's editor. If you scroll to the bottom of the file, you'll find a method called `prepareForSegue(_:sender:)` that looks like this:
+You know that there's a segue between the `FruitListingViewController` (represented as **Fruits Scene** in the storyboard) and `FruitViewController` (represented as **Fruit View Controller Scene** in the storyboard). Open up `FruitListingViewController.swift` in Xcode's editor. If you scroll to the bottom of the file, you'll find a method called `prepare(for:sender:)` that looks like this:
 
 ```swift
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -200,3 +200,5 @@ Notice that you don't have to worry about creating and configuring a back button
 If this seems complicated, don't worry. As you work through some iOS projects, you'll quickly get a feel for scenes, segues, and navigation controllers. For now, build and run this project, and play around with the UI a bit to see how everything works from the user's perspective. Keep in mind what's going on under the hood!
 
 <a href='https://learn.co/lessons/segueStuff' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-segues-readme'>UIStoryboardSegue</a> on Learn.co and start learning to code for free.</p>
